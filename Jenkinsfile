@@ -19,10 +19,5 @@ pipeline{
                 sh 'mvn clean install'
             }
         }
-        stage('Run The Jar file'){
-            steps{
-                sh 'java -jar target/*.jar'
-            }
-        }
     }
 }
