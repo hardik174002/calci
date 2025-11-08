@@ -21,7 +21,7 @@ pipeline{
         }
         stage('Run The Jar file'){
             steps{
-                sh 'java -jar calci.jar'
+                sh 'java -jar *.jar'
             }
         }
     }
