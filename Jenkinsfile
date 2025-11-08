@@ -21,7 +21,7 @@ pipeline{
         }
         stage('Run The Jar file'){
             steps{
-                sh 'java -jar target/calculator-1.0-SNAPSHOT.jar'
+                sh 'java -jar *.jar'
             }
         }
     }
