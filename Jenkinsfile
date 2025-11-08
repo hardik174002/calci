@@ -2,7 +2,6 @@ pipeline{
     agent any
     tools {
         maven 'M3'
-        jdk 'JDK21'
     }
     stages{
         stage('Build'){
@@ -18,6 +17,11 @@ pipeline{
         stage('Making Jar File'){
             steps{
                 sh 'mvn clean install'
+            }
+        }
+        stage('Run The Jar file'){
+            steps{
+                sh 'java -jar target/calculator-1.0-SNAPSHOT.jar'
             }
         }
     }
