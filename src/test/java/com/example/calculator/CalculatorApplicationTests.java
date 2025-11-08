@@ -15,7 +15,7 @@ class CalculatorApplicationTests {
 
 	@Test
 	void sampleTest() {	
-		assertTrue(1 + 1 == 3);
+		assertTrue(1 + 1 == 2);
 	}
 	// Comment added for testing
 }
