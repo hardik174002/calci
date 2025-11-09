@@ -18,6 +18,7 @@ mvn clean package'''
     stage('Making Jar File') {
       steps {
         sh 'mvn clean install'
+        archiveArtifacts(artifacts: 'target/*.jar', fingerprint: true, onlyIfSuccessful: true)
       }
     }
 
