@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                sh "We are on branch ${params.BRANCH}"
+                echo "We are on branch ${params.BRANCH}"
                 sh 'mvn clean package'
             }
         }
