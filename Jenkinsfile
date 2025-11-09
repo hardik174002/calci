@@ -23,7 +23,7 @@ pipeline{
         stage('Deploy'){
             steps{
                 sh 'echo Deploying the application...'
-                sleep ${params.SLEEP}
+                sleep "${params.SLEEP}"
             }
         }
     }
